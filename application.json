@@ -15,7 +15,7 @@
   "color": "#F5D1D1",
   "icon": "bird",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
     "type": "FLUID"
