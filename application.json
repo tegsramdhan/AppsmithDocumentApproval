@@ -18,7 +18,7 @@
     "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "TABLET_LARGE"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
