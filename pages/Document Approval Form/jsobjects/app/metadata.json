@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "app",
+    "pageId": "Document Approval Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Document Approval Form_app",
+  "deleted": false,
+  "gitSyncId": "64885c64064d860ffc88cde0_648b1641ec992646d27d0db4"
+}

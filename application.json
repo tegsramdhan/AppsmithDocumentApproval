@@ -20,7 +20,11 @@
   "publishedAppLayout": {
     "type": "TABLET_LARGE"
   },
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "supabase_https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

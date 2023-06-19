@@ -87,7 +87,9 @@
                       "topRow": 0,
                       "bottomRow": 7,
                       "parentRowSpace": 10,
-                      "allowedFileTypes": [],
+                      "allowedFileTypes": [
+                        "*"
+                      ],
                       "type": "FILE_PICKER_WIDGET_V2",
                       "hideCard": false,
                       "mobileRightColumn": 36,
@@ -116,7 +118,7 @@
                       "maxFileSize": 5,
                       "dynamicTyping": true,
                       "version": 1,
-                      "fileDataType": "Base64",
+                      "fileDataType": "Binary",
                       "parentId": "fisv9r92gx",
                       "selectedFiles": [],
                       "renderMode": "CANVAS",
@@ -426,6 +428,7 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 4,
                       "widgetName": "Button1",
+                      "onClick": "{{app.uploadFile();}}",
                       "buttonColor": "#16a34a",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
@@ -441,7 +444,11 @@
                       "mobileRightColumn": 16,
                       "animateLoading": true,
                       "parentColumnSpace": 8.785400390625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -1076,7 +1083,31 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Document Approval Form_GetAppsmithConfig",
+              "name": "GetAppsmithConfig",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Document Approval Form_app.getAppsmithConfig",
+              "name": "app.getAppsmithConfig",
+              "collectionId": "Document Approval Form_app",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await GetAppsmithConfig.run();\n  GetAppsmithConfig.data.forEach(obj => {\n    storeValue(obj.KeyName.toString(), obj.Value, true);\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Document Approval Form",
